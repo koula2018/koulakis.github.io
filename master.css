@@ -1,0 +1,28 @@
+body {
+  background-color: #D3D3D3;
+}
+
+.main-page {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-data {
+  float: left;
+  padding: 20px;
+}
+
+.social-links {
+  float: right;
+  padding: 20px;
+}
+
+.navigation {
+  background-color: silver;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: white;
+}
