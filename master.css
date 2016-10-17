@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background-color: #D3D3D3;
+  background-image: url("pics/background.jpg");
+  background-size:100%;
   height: 100%;
   font-family: Roboto;
 }
@@ -13,34 +14,36 @@ body {
   margin: 1px;
 }
 
-.header {
+.panel {
+  height: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 0px;
+}
+
+#header {
   display: flex;
   justify-content: space-between;
 }
 
-.my-data {
+#my-data {
   padding: 20px;
 }
 
-.name {
+#name {
   font-family: "Oswald";
 }
 
-.social-links {
+#social-links {
   align-self: center;
   padding: 20px;
 }
 
-.main-content {
+#main-content {
   height: 100%;
+  opacity: 0.9;
 }
 
-.navigation {
+#navigation {
   background-color: silver;
-}
-
-.tab-content {
-  height: 100%;
-  padding: 20px;
-  background-color: white;
 }
