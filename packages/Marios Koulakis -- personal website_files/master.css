@@ -34,6 +34,10 @@ body {
   align-self="flex-begin"
 }
 
+.tab-text {
+  margin-top: 10px;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
