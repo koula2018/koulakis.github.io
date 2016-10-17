@@ -8,6 +8,11 @@ body {
   font-family: Roboto;
 }
 
+.genericon {
+  font-size: 25px;
+  margin: 1px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
