@@ -1,3 +1,8 @@
+:root {
+  --main-color-blue: #337ab7;
+  --navigation-color: silver;
+}
+
 html {
   height: 100%;
 }
@@ -45,5 +50,24 @@ body {
 }
 
 #navigation {
-  background-color: silver;
+  background-color: var(--navigation-color);
+}
+
+#footer {
+  position: fixed;
+  height: 42px;
+  background-color: var(--navigation-color);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#tab-links > * {
+  margin-left: 2px;
+  margin-right: 2px;
 }
