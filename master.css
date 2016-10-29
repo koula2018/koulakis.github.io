@@ -37,6 +37,10 @@ body {
 #header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1000;
 }
 
 #my-data {
@@ -54,7 +58,6 @@ body {
 
 #main-content {
   height: 100%;
-  opacity: 0.9;
 }
 
 #navigation {
