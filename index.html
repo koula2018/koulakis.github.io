@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="packages/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script src="packages/jquery-3.1.1.min.js"></script>
+    <script src="packages/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="packages/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -17,6 +18,20 @@
             e.preventDefault();
             $('a[href="' + $(this).attr('href') + '"]').tab('show');
         })
+      });
+    </script>
+    <script type="text/javascript">
+      var isTop = true;
+      $(window).scroll(() => {
+        scroll = $(window).scrollTop()
+        if(scroll > 40 && isTop) {
+          $('#header').animate({'backgroundColor': 'rgba(255, 255, 255, 0.95)'}, 'medium');
+          isTop = false;
+        }
+        else if(scroll <= 40 && !isTop){
+          $('#header').animate({'backgroundColor': 'rgba(0,0,0,0)'}, 'medium');
+          isTop = true;
+        }
       });
     </script>
     <title>Marios Koulakis -- personal website</title>
