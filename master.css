@@ -21,7 +21,6 @@ body {
 
 .panel {
   height: 100%;
-  padding: 20px;
   background-color: white;
   border-radius: 0px;
 }
@@ -32,6 +31,10 @@ body {
 
 .picture-in-text {
   align-self="flex-begin"
+}
+
+.tab-content {
+  padding: 0;
 }
 
 #header {
