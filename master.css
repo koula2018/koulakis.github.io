@@ -19,12 +19,6 @@ body {
   margin: 1px;
 }
 
-.panel {
-  height: 100%;
-  background-color: white;
-  border-radius: 0px;
-}
-
 .picture-and-text {
   display: flex;
 }
