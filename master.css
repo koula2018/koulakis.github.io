@@ -58,7 +58,14 @@ body {
 }
 
 #navigation {
-  background-color: var(--navigation-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tab-links > * {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 #footer {
@@ -73,9 +80,4 @@ body {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-#tab-links > * {
-  margin-left: 2px;
-  margin-right: 2px;
 }

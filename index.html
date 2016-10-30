@@ -21,27 +21,49 @@
       });
     </script>
     <script type="text/javascript">
+      function allChildren(action, element, ...params) {
+        [].forEach.call(
+          $(element).children(),
+          child => {
+            $(child)[action](...params);
+            allChildren(action, child, ...params);
+          });
+      }
       var isTop = true;
-      var myblue = '#337ab7'
+      var myblue = '#337ab7';
+      var animationSpeed = 'slow';
 
       var movedToBottom = scroll => scroll > 40 && isTop;
       var movedToTop = scroll => scroll <= 40 && !isTop;
+      function initializeHeader() {
+        $('#header').css('backgroundColor', 'rgba(0, 0, 0, 0)');
+        allChildren(
+          'css',
+          $('#header'),
+          'color',
+          'white');
+        isTop = true;
+      }
       function configHeaderBottom() {
-        $('#header').animate(
-          {'backgroundColor': 'rgba(255, 255, 255, 0.95)',
-           'color': myblue},
-          'medium');
+        $('#header').animate({ 'backgroundColor': 'rgba(255, 255, 255, 0.95)' }, animationSpeed);
+        allChildren(
+          'animate',
+          $('#header'),
+          { 'color': myblue },
+          animationSpeed);
         isTop = false;
       }
       function configHeaderTop() {
-        $('#header').animate(
-          {'backgroundColor': 'rgba(0,0,0,0)',
-           'color': 'white'},
-          'medium');
+        $('#header').animate({ 'backgroundColor': 'rgba(0, 0, 0, 0)' }, animationSpeed);
+        allChildren(
+          'animate',
+          $('#header'),
+          { 'color': 'white' },
+          animationSpeed);
         isTop = true;
       }
 
-      configHeaderTop();
+      $(document).ready(initializeHeader);
       $(window).scroll(() => {
         scroll = $(window).scrollTop()
         if(movedToBottom(scroll)) configHeaderBottom()
@@ -57,31 +79,18 @@
           <h2 id="name" style='margin-top: 10px'><b>Marios Koulakis</b></h2>
           <div>Software Developer & Mathematician</div>
         </div>
-        <div id="social-links">
-          <a class="genericon genericon-github" title="GitHub" href="https://github.com/mariosco"></a>
-          <a class="genericon genericon-linkedin-alt" title="LinkedIn" href="https://www.linkedin.com/in/marioskoulakis"></a>
-          <a class="genericon genericon-twitter" title="Twitter" href="https://twitter.com/marioskoul"></a>
+        <!-- NAVIGATION -->
+        <div id="navigation">
+          <div id="tab-links">
+            <a class="tab-link" href="#about" data-toggle="tab">About</a>
+            <a class="tab-link" href="#data-science" data-toggle="tab">Data Science</a>
+            <a class="tab-link" href="#programming" data-toggle="tab">Programming</a>
+            <a class="tab-link" href="#math" data-toggle="tab">Mathematics</a>
+          </div>
         </div>
       </div>
       <!-- MAIN CONTENT -->
       <div id="main-content">
-        <!-- NAVIGATION -->
-        <div id="navigation">
-          <ul class="nav nav-tabs">
-            <li class="active">
-              <a data-toggle="tab" href="#about">About</a>
-            </li>
-            <li>
-              <a data-toggle="tab" href="#data-science">Data Science</a>
-            </li>
-            <li>
-              <a data-toggle="tab" href="#programming">Programming</a>
-            </li>
-            <li>
-              <a data-toggle="tab" href="#math">Mathematics</a>
-            </li>
-          </ul>
-        </div>
         <!-- TAB CONTENT -->
         <div class="tab-content col-sm-8">
           <!-- ABOUT... -->
@@ -123,12 +132,11 @@
       <!-- FOOTER -->
       <div id="footer">
         <h6 id="copyright">Copyright © 2016 Marios Koulakis</h6>
-        <h6 id="tab-links">
-          <a class="tab-link" href="#about" data-toggle="tab">About</a>
-          <a class="tab-link" href="#data-science" data-toggle="tab">Data Science</a>
-          <a class="tab-link" href="#programming" data-toggle="tab">Programming</a>
-          <a class="tab-link" href="#math" data-toggle="tab">Mathematics</a>
-        </h6>
+        <div id="social-links">
+          <a class="genericon genericon-github" title="GitHub" href="https://github.com/mariosco"></a>
+          <a class="genericon genericon-linkedin-alt" title="LinkedIn" href="https://www.linkedin.com/in/marioskoulakis"></a>
+          <a class="genericon genericon-twitter" title="Twitter" href="https://twitter.com/marioskoul"></a>
+        </div>
       </div>
   </body>
 </html>
