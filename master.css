@@ -58,6 +58,10 @@ body {
   height: 100%;
 }
 
+#single-tab-content {
+  margin-bottom: 42px;
+}
+
 #navigation {
   display: flex;
   flex-direction: column;
