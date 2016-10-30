@@ -16,6 +16,7 @@ body {
 .genericon {
   font-size: 25px;
   margin: 1px;
+  color: var(--main-color-blue);
 }
 
 .picture-and-text {

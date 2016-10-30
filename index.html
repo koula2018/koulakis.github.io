@@ -22,16 +22,30 @@
     </script>
     <script type="text/javascript">
       var isTop = true;
+      var myblue = '#337ab7'
+
+      var movedToBottom = scroll => scroll > 40 && isTop;
+      var movedToTop = scroll => scroll <= 40 && !isTop;
+      function configHeaderBottom() {
+        $('#header').animate(
+          {'backgroundColor': 'rgba(255, 255, 255, 0.95)',
+           'color': myblue},
+          'medium');
+        isTop = false;
+      }
+      function configHeaderTop() {
+        $('#header').animate(
+          {'backgroundColor': 'rgba(0,0,0,0)',
+           'color': 'white'},
+          'medium');
+        isTop = true;
+      }
+
+      configHeaderTop();
       $(window).scroll(() => {
         scroll = $(window).scrollTop()
-        if(scroll > 40 && isTop) {
-          $('#header').animate({'backgroundColor': 'rgba(255, 255, 255, 0.95)'}, 'medium');
-          isTop = false;
-        }
-        else if(scroll <= 40 && !isTop){
-          $('#header').animate({'backgroundColor': 'rgba(0,0,0,0)'}, 'medium');
-          isTop = true;
-        }
+        if(movedToBottom(scroll)) configHeaderBottom()
+        else if(movedToTop(scroll)) configHeaderTop()
       });
     </script>
     <title>Marios Koulakis -- personal website</title>
@@ -40,7 +54,7 @@
       <!-- HEADER -->
       <div id="header">
         <div id="my-data">
-          <h2 id="name"><b>Marios Koulakis</b></h2>
+          <h2 id="name" style='margin-top: 10px'><b>Marios Koulakis</b></h2>
           <div>Software Developer & Mathematician</div>
         </div>
         <div id="social-links">
