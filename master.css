@@ -1,6 +1,5 @@
 :root {
   --main-color-blue: #337ab7;
-  --navigation-color: silver;
 }
 
 html {
@@ -17,7 +16,7 @@ body {
 .genericon {
   font-size: 25px;
   margin: 1px;
-  color: var(--main-color-blue);
+  color: white;
 }
 
 .picture-and-text {
@@ -69,7 +68,7 @@ body {
 
 #footer {
   height: 100px;
-  background-color: var(--navigation-color);
+  background-color: var(--main-color-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,4 +78,8 @@ body {
 #social-links {
   align-self: center;
   padding: 10px;
+}
+
+#copyright {
+  color: white;
 }
