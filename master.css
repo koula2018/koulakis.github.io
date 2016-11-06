@@ -13,6 +13,10 @@ body {
   font-family: Roboto;
 }
 
+a {
+  color: var(--main-color-blue);
+}
+
 .genericon {
   font-size: 25px;
   margin: 1px;
@@ -29,6 +33,25 @@ body {
 
 .tab-content {
   padding: 0;
+}
+
+.tab-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  padding: 20px 30px;
+  margin: auto;
+}
+
+h2.tab-information {
+  margin-top: 20px;
+}
+
+hr.information {
+  max-width: 640px;
+  box-shadow: 0px 1px 1px
 }
 
 #header {
@@ -66,14 +89,10 @@ body {
   font-size: 13px;
 }
 
-#tab-information {
-  max-width: 1024px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  padding: 60px 30px;
+#theses > * {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 13px;
 }
 
 #footer {
@@ -83,6 +102,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 #social-links {
