@@ -21,7 +21,7 @@ code {
   color: var(--main-color-blue);
 }
 
-.genericon {
+#social-links > .genericon {
   font-size: 25px;
   margin: 1px;
   color: white;
@@ -29,10 +29,14 @@ code {
 
 .picture-and-text {
   display: flex;
+  justify-content: space-between;
 }
 
 .picture-in-text {
-  align-self: flex-start;
+  align-self: center;
+  border-radius: 50%;
+  border: solid;
+  border-color: var(--main-color-blue);
 }
 
 .tab-content {
@@ -56,6 +60,10 @@ h2.tab-information {
 hr.information {
   max-width: 640px;
   box-shadow: 0px 1px 1px
+}
+
+.link-button {
+  border-color: var(--main-color-blue);
 }
 
 #header {
