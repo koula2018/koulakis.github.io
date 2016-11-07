@@ -17,6 +17,10 @@ a {
   color: var(--main-color-blue);
 }
 
+code {
+  color: var(--main-color-blue);
+}
+
 .genericon {
   font-size: 25px;
   margin: 1px;

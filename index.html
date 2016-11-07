@@ -26,7 +26,7 @@
           <div id="tab-links">
             <a class="tab-link" href="#about" data-toggle="tab">ABOUT</a>
             <a class="tab-link" href="#data-science" data-toggle="tab">DATA SCIENCE</a>
-            <a class="tab-link" href="#programming" data-toggle="tab">IT</a>
+            <a class="tab-link" href="#programming" data-toggle="tab">PROGRAMMING</a>
             <a class="tab-link" href="#math" data-toggle="tab">MATH</a>
           </div>
         </div>
@@ -67,7 +67,6 @@
             <div class="tab-information">
               <span>Rossmann...</span>
             </div>
-            <hr class="information">
           </div>
           <!-- PROGRAMMING -->
           <div id="programming" class="tab-pane fade in active">
@@ -75,19 +74,68 @@
             <h2 class="tab-information">Programming</h2>
             <hr class="information">
             <div class="tab-information">
-              Summary...
+              One of my biggest passions is programming.
+              I am in love with the expressiveness of functional and array programming, the challenge of building messaging and distributing tasks, the effectiveness of web technologies in building UIs and the joy of exploring new languages and technologies.
+              I have been writing software as a hobby since 2013, mainly for machine learning problems and big change occurred in 2015 when I started coding professionaly.
+              During this period, thanks to my German colleagues Marco Heimeshoff, Philip Jander and Nils Helmig I got involved with software development from the database to the front-end level and explored interesting architectures such as CQRS and Event Sourcing.
             </div>
             <hr class="information">
             <!-- BENDER -->
             <h3 class="tab-information">Monad transformers and state</h3>
             <div class="tab-information">
-              <span>Bender...</span>
+              <p>
+                Some interesting tools of functional programming are <i>functors</i>, <i>applicative functors</i> and <i>monads</i>.
+                They provide an elegant way to lift your arguments about types to wrapped types such as collections, optional types and IO, without having to explicitly argue about all possible outcomes.
+                Though those tools lead to happy days, one stumbles quickly to the first problem: how do you use the same declarative expressiveness when combining two different monads?
+                Luckily enough, there is already a solution for this problem called <a href="https://en.wikibooks.org/wiki/Haskell/Monad_transformers" target="_blank">monad transformers</a>.
+                Those guys wrap the one monad inside the other and provide a nice way to transfer arguments between them using the <code>lift</code> function.
+              </p>
+              <p>
+                One nice example of a situation where one would use transformers is that of a state machine which ocassionally receives input and produces output.
+                There one can wrap the IO monad with the state monad and then control both of them with the transformer.
+                At some point I decided that <a href="https://www.codingame.com/training/medium/bender-episode-1" target="_blank">Bender</a>, one of my favorite <a href="https://www.codingame.com/start" target="blank">codingame</a> puzzles, whould be a great case for such a state machine and refactored my <code>F#</code> code to <code>Haskell</code> to give it a try.
+                If you are curious, here is the result:
+              </p>
+              <a href="https://github.com/mariosco/Bender" target="_blank">Bender in GitHub</a>
             </div>
             <hr class="information">
             <!-- ONE MORE TODO LIST -->
             <h3 class="tab-information">Event sourcing</h3>
             <div class="tab-information">
-              <span>One more todo list...</span>
+              <p>
+                <a href="http://martinfowler.com/eaaDev/EventSourcing.html">Event sourcing</a> is one of those ideas that when you first encounter them you think "This is so simple and awesome! Why haven't I used this stuff before?".
+                It's simplicity lies in the realization that instead of spending time to persist you data in structured tables you can just record each change with an event which contains all relevant information.
+                Afterwards, when you want to read the value of some entity, you can go through the relevant events and decide what its last status was.
+                This pattern is a close friend to the command query responsibility segregation (<a href="http://www.h-online.com/developer/features/CQRS-an-architecture-precept-based-on-segregation-of-commands-and-queries-1803276.html" target="_blank">CQRS</a>) and one often meets them implemented together.
+              </p>
+              <p>
+                One simple example of such a process is git. You save each change of your code in a commit and then you can use your commit history to recover the latest version of your code.
+                Aside from that, you can always go back to a past version of your code and also analyse your workflow history.
+              </p>
+              <p>
+                Event sourcing has some amazing advantages when compared with other ways of persisting data such as the relational model:
+                <ul>
+                  <li>the history of all the transactions is saved and can be used to perform any kind of business analysis and data mining; you even keep the information you once considered useless and is now helping you on your marketing strategies</li>
+                  <li>the data is immutable, thus you loose the ability to create a chaos by changing or deleting the wrong value</li>
+                  <li>if something goes wrong, you can go through the history and discover weaknesses and bugs in your software</li>
+                  <li>data saved in event stores </li>
+                </ul>
+              </p>
+              <p>
+                Of course, like almost any choice in programming, it comes along with several disadvantages and one has to decide wizely whether this is the right choice for his type of data:
+                <ul>
+                  <li>it costs time to build the extra infrastructure that manages the persistence and projections of events</li>
+                  <li>there is no uniform way, like sql, to query your data</li>
+                  <li>when the amount of events becomes large one has to begin taking snapshots to improve performance</li>
+                </ul>
+              </p>
+              <p>
+                While exploring some of the capabilities of react.js and technologies of node.js, I decided to use implement a small eventstore to manage persistence in a todo list.
+                This is a link to this example:
+              </p>
+              <p>
+                <a href="https://github.com/mariosco/One_more_todo_list/tree/master/output" target="_blank">Eventstore implementation in a todo list</a>
+              </p>
             </div>
           </div>
           <!-- MATHEMATICS -->
