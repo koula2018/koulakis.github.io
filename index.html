@@ -40,8 +40,8 @@
           <div id="about" class="tab-pane fade in active">
             <img src="pics/about.jpg" width='100%'/>
             <h2 class="tab-information">About</h2>
-            <hr class="information">
-            <div class="tab-information">
+            <hr class="information about-information">
+            <div class="tab-information about-information">
               <div class="picture-and-text">
                 <img
                   class="picture-in-text"
@@ -51,26 +51,26 @@
                   title="Me in Cuba"/>
                 <div class="col-sm-8">
                   So this is me (in Cuba!).
-                  I have a quite wide range of interests like coding, analyzing data and doing math.
-                  My academic education was focused on mathematics and computer science and was finished with a doctorate in set theory.
-                  Since then I have been working professionally as a full-stack programmer and have been flirting around with functional programming, machine learning, distributed computing and trying out several programming languages.
-                  In this website I gathered some of the stuff I find interesting, some of the stuff I have build and some ideas on stuff that I would like to work on.
-                  If you share some of the interests, or something catches your eye, I would be happy to contant you!
+                  My interests range from coding and analyzing data to doing math and dancing salsa.
+                  I finished my studies, which were focusing on mathematics and computer science, with a doctorate in set theory.
+                  Since then, I have been working as a full-stack programmer, experimenting with functional programming, machine learning, distributed computing and several programming languages.
+                  This website gathers things I find interesting, some of the stuff I built, and ideas I am planning to work on.
+                  If you share some of the interests, or something catches your eye, I would be happy to get in touch with you!
                 </div>
               </div>
             </div>
           </div>
           <!-- DATA SCIENCE -->
           <div id="data-science" class="tab-pane fade">
-            <img src="pics/datascience.jpg" width='100%'/>
+            <img src="pics/dataScience.jpg" width='100%'/>
             <h2 class="tab-information">Data Science</h2>
             <hr class="information">
             <div class="tab-information">
               <span>
-                My interest in data science was triggered around 2013, thanks to my friend <a href="https://iarapakis.github.io/index.html">Ioannis Arapakis</a>.
-                Since then I have experimented with several models to analyse human computer interaction, financial and digital image data.
+                My interest in data science was triggered around 2013, thanks to my friend <a href="https://iarapakis.github.io/index.html">Ioannis Arapakis</a>, who asked for my opinion on the implementation and use of hidden Markov models and entropy measures.
+                Since then, I have experimented with several models to analyse human computer interaction, and financial and digital image data.
                 Among the topics that fascinate me are feature engineering, time series analyses and deep learning.
-                Aside from learning algorithms, I find the handling of large amounts of data a topic of great interest by itself and I have also applied methods to extract and  process data as well as design training in batches.
+                Aside from learning algorithms, I am interested in the handling of large amounts of data. In this context, I have applied methods to extract and process data as well as designed training in batches.
               </span>
             </div>
             <hr class="information">
@@ -78,10 +78,10 @@
             <h3 class="tab-information">Linear Regression and feature engineering in F#</h3>
             <div class="tab-information">
               <span>
-                This is my first attempt to compete in <a href="https://www.kaggle.com/">Kaggle</a> and also my first code in <code>F#</code> used for machine learning.
-                The project, plus parts of the code, were inspired by a wonderful <a href="https://buildstuff2015workshops.sched.org/event/4Rpm/2-day-workshop-mathias-brandewinder-machine-learning-and-functional-programing">workshop</a> by <a href="http://brandewinder.com/about/">Mathias Brandewinder</a> in the conference <a href="http://www.buildstuff.lt/">Build Stuff</a>.
+                This was my first attempt to compete in <a href="https://www.kaggle.com/">Kaggle</a> and also my first code in F# that was used for machine learning.
+                The project, plus parts of the code, were inspired by a wonderful <a href="https://buildstuff2015workshops.sched.org/event/4Rpm/2-day-workshop-mathias-brandewinder-machine-learning-and-functional-programing">workshop</a> by <a href="http://brandewinder.com/about/">Mathias Brandewinder</a> at the <a href="http://www.buildstuff.lt/">Build Stuff</a> conference.
                 The contest's goal was to predict the future sales of Rossmann and this solution contains an implementation of linear regression and the use of featurizers to produce new features from the initial data.
-                The new features served as means to overcome the linear nature of the model and also to extract specific information.
+                The new features served as means to overcome the linear nature of the model and to extract relevant information.
                 You can find the code here:
               </span>
             </div>
@@ -97,7 +97,7 @@
             <div class="tab-information">
               One of my biggest passions is programming.
               I am in love with the expressiveness of functional and array programming, the challenge of building messaging and distributing tasks, the effectiveness of web technologies in building UIs and the joy of exploring new languages and technologies.
-              I have been writing software as a hobby since 2013, mainly for machine learning problems and big change occurred in 2015 when I started coding professionally.
+              I have been writing software as a hobby since 2013, mainly for machine learning problems and a big change occurred in 2015 when I started coding professionally.
               During this period, thanks to my German colleagues Marco Heimeshoff, Philip Jander and Nils Helmig I got involved with software development from the database to the front-end level and explored interesting architectures such as CQRS and Event Sourcing.
             </div>
             <hr class="information">
@@ -109,12 +109,12 @@
                 They provide an elegant way to lift your arguments about types to wrapped types such as collections, optional types and IO, without having to explicitly argue about all possible outcomes.
                 Though those tools lead to happy days, one stumbles quickly to the first problem: how do you use the same declarative expressiveness when combining two different monads?
                 Luckily enough, there is already a solution for this problem called <a href="https://en.wikibooks.org/wiki/Haskell/Monad_transformers">monad transformers</a>.
-                Those guys wrap the one monad inside the other and provide a nice way to transfer arguments between them using the <code>lift</code> function.
+                Those guys wrap the one monad inside the other and provide a nice way to transfer arguments between them using the lift function.
               </p>
               <p>
-                One nice example of a situation where one would use transformers is that of a state machine which ocasionally receives input and produces output.
+                One nice example of a situation where one would use transformers is that of a state machine which occasionally receives input and produces output.
                 There one can wrap the IO monad with the state monad and then control both of them with the transformer.
-                At some point I decided that <a href="https://www.codingame.com/training/medium/bender-episode-1">Bender</a>, one of my favorite <a href="https://www.codingame.com/start" target="blank">codingame</a> puzzles, would be a great case for such a state machine and refactored my <code>F#</code> code to <code>Haskell</code> to give it a try.
+                At some point I decided that <a href="https://www.codingame.com/training/medium/bender-episode-1">Bender</a>, one of my favorite <a href="https://www.codingame.com/start" target="blank">codingame</a> puzzles, would be a great case for such a state machine and refactored my F# code to Haskell to give it a try.
                 If you are curious, here is the result:
               </p>
             </div>
@@ -126,8 +126,8 @@
             <h3 class="tab-information">Event sourcing</h3>
             <div class="tab-information">
               <p>
-                <a href="http://martinfowler.com/eaaDev/EventSourcing.html">Event sourcing</a> is one of those ideas that when you first encounter them you think "This is so simple and awesome! Why haven't I used this stuff before?".
-                It's simplicity lies in the realization that instead of spending time to persist you data in structured tables you can just record each change with an event which contains all relevant information.
+                <a href="http://martinfowler.com/eaaDev/EventSourcing.html">Event sourcing</a> is one of those ideas that when you first encounter them you think "This is so simple and awesome! Why haven't I used this stuff before?"
+                Its simplicity lies in the realization that instead of spending time to persist you data in structured tables you can just record each change with an event which contains all relevant information.
                 Afterwards, when you want to read the value of some entity, you can go through the relevant events and decide what its last status was.
                 This pattern is a close friend to the command query responsibility segregation (<a href="http://www.h-online.com/developer/features/CQRS-an-architecture-precept-based-on-segregation-of-commands-and-queries-1803276.html">CQRS</a>) and one often meets them implemented together.
               </p>
@@ -141,11 +141,11 @@
                   <li>the history of all the transactions is saved and can be used to perform any kind of business analysis and data mining; you even keep the information you once considered useless and is now helping you on your marketing strategies</li>
                   <li>the data is immutable, thus you loose the ability to create a chaos by changing or deleting the wrong value</li>
                   <li>if something goes wrong, you can go through the history and discover weaknesses and bugs in your software</li>
-                  <li>data saved in event stores </li>
+                  <li>data saved in different event stores can easily be combined together as long as one pays attention to the historical ordering of events</li>
                 </ul>
               </p>
               <p>
-                Of course, like almost any choice in programming, it comes along with several disadvantages and one has to decide wizely whether this is the right choice for his type of data:
+                Of course, like almost any choice in programming, it comes along with several disadvantages and one has to decide wisely whether it is the right choice for his type of data:
                 <ul>
                   <li>it costs time to build the extra infrastructure that manages the persistence and projections of events</li>
                   <li>there is no uniform way, like sql, to query your data</li>
@@ -153,7 +153,7 @@
                 </ul>
               </p>
               <p>
-                While exploring some of the capabilities of react.js and technologies of node.js, I decided to use implement a small eventstore to manage persistence in a todo list.
+                While exploring some of the capabilities of react.js and technologies of node.js, I decided to implement a small eventstore to manage persistence in a todo list.
                 This is a link to this example:
               </p>
             </div>
@@ -163,7 +163,7 @@
           </div>
           <!-- MATHEMATICS -->
           <div id="math" class="tab-pane fade">
-            <img src="pics/koulcom.jpg" width='100%'/>
+            <img src="pics/mathematics.jpg" width='100%'/>
             <h2 class="tab-information">Mathematics</h2>
             <hr class="information">
             <div class="tab-information">
