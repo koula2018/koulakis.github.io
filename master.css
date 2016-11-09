@@ -87,6 +87,7 @@ hr.about-information {
 
 #my-data {
   padding: 20px;
+  cursor: pointer;
 }
 
 #name {
