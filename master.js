@@ -2,6 +2,7 @@ $(function () {
   $(".tab-link").click(function (e) {
       e.preventDefault();
       $('a[href="' + $(this).attr('href') + '"]').tab('show');
+	  $('body').scrollTop(0);
   })
 });
 function allChildren(action, element, ...params) {
