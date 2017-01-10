@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/marioskoulakis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://koulakis.github.io
+  * I am marioskoulakis (https://keybase.io/marioskoulakis) on keybase.
+  * I have a public key with fingerprint 76CA 8090 E401 0919 C8D9  40E9 7B85 DB55 E9F0 C955
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101096e720a3e819ceb6c545f89e349ad7a66fa6658179fe2ae66b76195d00cda860a",
+            "fingerprint": "76ca8090e4010919c8d940e97b85db55e9f0c955",
+            "host": "keybase.io",
+            "key_id": "7b85db55e9f0c955",
+            "kid": "0101096e720a3e819ceb6c545f89e349ad7a66fa6658179fe2ae66b76195d00cda860a",
+            "uid": "dbd076c60b7680c41972c5ae8169bc19",
+            "username": "marioskoulakis"
+        },
+        "service": {
+            "hostname": "koulakis.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1484062788,
+    "expire_in": 157680000,
+    "prev": "72e95f974fc6036fc845058fc2ccab6e762e36287c189311357ab13bc737eabc",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.61
+Comment: https://keybase.io/crypto
+
+yMItAnicrVJbSBVBGN7TxepQmEZFFwK3QEqz3bPXORWCqQWVYnSjhOPM7OxxO7p7
+PLurHszwxegiRZnRzcqMLg9FWS8lZEUhdQiTKK3swaCyjCCRqKho1i5PPTbDMMzM
+933zfT//nUmjGb/vxuFVPant5ihf4lary2x0mdwaFllanA3WsBEyspEyjdhOKGJo
+bJDleDqBTJQABwWi8gATJGNJlHQVEEEEUFOgLOt0SSqvAJ0EIJFlpMg8kDSOwxpU
+ZQ6ymaxumGESi8YM06GyioyhygGOiJ48VVU1IHIEKEiVNCRJBOgcBpJEiaWW7TGo
+OQRtkmVY9I4eQiP2/oH/z77dETkNaRz1LHMUoXJY5IESwBKkwjJAmAce0CYxE5YT
+ii6HMcOyI5ZbBiOGzdZmsvSt0sDEK6+X5zfuDyIrbDilLvqVLRqzHAtbZfS91HGi
+dtDjO/GoR6giKPRbKoQMU6M1pYxKErMNy2SDPEVix/C0eVEVOTmgqGomS6qjRoyE
+DA8hef7p8P4hlV4FAwRIOlBEnaYTZB2rosRJqo4DGENECygHiCAHVAXzKhB4XpAU
+iHgBYUVQCESY9cJVmBYbFKlNGKaSthE2oePGCFt7+2bxGMbnZ5LGjvJ6jfFPmPy3
+AzvHffGNf3Hfen25Zjg7Eaya6qYu71vrf9xYnLFn1+5IOkL9J/Lz3n5kKjs2n1sZ
+T9vkT8ovWfjhwKl3RknSs6EVA0OL68eMLot3hqsb2gdnlE96t//ztWm7k7tOz/rR
+/Z1x79elPFk98L3z4dHjR49tWN9yqevekinRNLl3QeHOotctg6trlyZ3PG3OXbTs
+bWLoyNwqf+Ls9DlFvtmFFQUZDYfbhsONufOwu+168sFQelPPoYoHyqY3W6zicUPC
+oWjO8707robT3qdceaU21fWZ6VpWadLMjJcXIwWffnRvz2Zar5yP45MT2qR1RXn7
+1mztaJqYY/au+Pqt//O1I83KhbvzHx2sP1P9E4hiQnY=
+=ZEsO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/marioskoulakis
+
+==================================================================
